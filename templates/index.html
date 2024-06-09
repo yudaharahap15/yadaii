@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Teknofokus</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="static/img/logo5.jpeg" rel="icon">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Green
+  * Template URL: https://bootstrapmade.com/green-free-one-page-bootstrap-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo me-auto d-flex align-items-center">
+        <a href="index.html">
+          <img src="static/img/logo5.jpeg" alt="Teknofokus Logo" class="logo-img"> Teknofokus
+        </a>
+      </h1>
+  
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+          <li><a class="nav-link scrollto" href="#services">How To Use</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="{{ url_for('getstarted') }}">Get Started</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+      <div class="carousel-inner" role="listbox">
+
+        <!-- Slide 1 -->
+        <div class="carousel-item active" style="background-image: url(static/img/slide/slide-1.jpeg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Selamat Datang di <span>Teknofokus</span></h2>
+              <p class="animate__animated animate__fadeInUp">Tempat Anda untuk mendeteksi kualitas tomat dengan cepat dan akurat. Temukan cara baru untuk mengevaluasi tomat dengan teknologi terkini. Mari kita mulai memindai dan mengidentifikasi tomat berkualitas tinggi bersama</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="carousel-item" style="background-image: url(static/img/slide/slide-2.jpeg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Visi</h2>
+              <p class="animate__animated animate__fadeInUp">Menjadi yang terdepan dalam teknologi pendeteksian tomat pada proses pemanenan menggunakan conveyor belt, menciptakan solusi inovatif yang memungkinkan pengguna untuk menghasilkan buah tomat berkualitas tinggi dengan efisiensi maksimal.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="carousel-item" style="background-image: url(static/img/slide/slide-3.jpeg)">
+          <div class="carousel-container">
+            <div class="container">
+              <h2 class="animate__animated animate__fadeInDown">Misi</h2>
+              <p class="animate__animated animate__fadeInUp">Mengembangkan aplikasi pendeteksian tomat yang canggih dan dapat diandalkan untuk proses pemanenan, memungkinkan pemisahan tomat berkualitas tinggi dengan akurasi tinggi, meningkatkan efisiensi produksi, dan menjamin kualitas buah tomat yang dihasilkan.</p>
+              <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read More</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Featured Services Section ======= -->
+    <!-- End Featured Services Section -->
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About Us</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2">
+            <img src="static/img/tentang.jpeg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>
+              Bagaimana Teknofokus dapat membantu Anda meningkatkan produktivitas dan mengurangi kerugian dalam pemanenan tomat?</h3>
+              <p>
+                Teknofokus adalah solusi terdepan dalam deteksi tomat otomatis untuk industri pertanian modern. Dengan teknologi inovatif kami, Anda dapat meningkatkan efisiensi dan akurasi dalam proses pemanenan tomat, mengoptimalkan hasil panen, dan mengurangi kerugian.
+              </p>
+            <ul>
+              <li><i class="bi bi-check-circled"></i>Teknofokus menggabungkan kecerdasan buatan dan sensor canggih untuk mendeteksi tomat di atas conveyor belt dengan akurasi tinggi, memastikan hanya tomat matang yang dipanen untuk meningkatkan kualitas hasil panen.</li>
+              <li><i class="bi bi-check-circled"></i>Teknofokus dirancang untuk mempercepat pemanenan tomat, menghemat waktu dan tenaga kerja. Dengan otomatisasi tinggi, Anda dapat meningkatkan produktivitas dan mengoptimalkan hasil panen.</li>
+            </ul>
+            <p>
+              Jelajahi lebih lanjut tentang Teknofokus dan bagaimana teknologi kami dapat membantu meningkatkan efisiensi dan produktivitas dalam industri pertanian Anda.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= How to Use ======= -->
+    <!-- End Why Us Section -->
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>How To Use</h2>
+        </div>
+        <!-- ======= Why Us Section ======= -->
+        <section id="why-us" class="why-us">
+          <div class="container">
+    
+            <div class="row no-gutters">
+    
+              <div class="col-lg-4 col-md-6 content-item">
+                <span>01</span>
+                <h4>Akses Fitur Kamera</h4>
+                <p>Tekan tombol "Get Started" untuk membuka halaman pendeteksian, lalu tekan tombol "Detection" untuk mengarahkan ke bagian deteksi.</p>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 content-item">
+                <span>02</span>
+                <h4>Posisikan Tomat di Depan Kamera</h4>
+                <p>Pada bagian "Preview Realtime Detection," arahkan kamera ke bagian yang ingin dideteksi, lalu tekan tombol "Start" untuk memulai proses pendeteksian.</p> 
+                </p>
+              </div>
+    
+              <div class="col-lg-4 col-md-6 content-item">
+                <span>03</span>
+                <h4> Lihat Hasil Deteksi</h4>
+                <p>Setelah proses deteksi selesai, website akan menampilkan hasil analisis dalam bentuk grafik data dan tabel data.</p>
+    
+            </div>
+    
+          </div>
+        </section><!-- End Why Us Section -->
+
+    
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Team</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="static/img/team/devani.jpeg" alt="">
+              <h4>Devani Egi Dia Fiska </h4>
+              <span>Ilmu Komunikasi</span>
+              <span>Universitas Malikussaleh</span>  
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="static/img/team/intan.jpeg" alt="">
+              <h4>Intan Safira</h4>
+              <span>Teknik Informatika</span>
+              <span>Universitas Malikussaleh</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="static/img/team/yuda.jpeg" alt="">
+              <h4>Yuda Mikraz Harahap</h4>
+              <span>Sistem Informasi</span>
+              <span>Universitas Labuhanbatu</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="static/img/team/andreas.jpeg" alt="">
+              <h4>Andreas Morado Silitonga</h4>
+              <span>Agribisnis</span>
+              <span>Universitas Medan Area</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="member">
+              <img src="static/img/team/aris.jpeg" alt="">
+              <h4>Aristo Muzakki</h4>
+              <span>Teknik Elektro</span>
+              <span>Universitas Malikussaleh</span>
+              <div class="social">
+                <a href=""><i class="bi bi-twitter"></i></a>
+                <a href=""><i class="bi bi-facebook"></i></a>
+                <a href=""><i class="bi bi-instagram"></i></a>
+                <a href=""><i class="bi bi-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+        
+
+      </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>Veteran RI Building 15th Floor Plaza Semanggi, Jakarta 12930</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>YADAI@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+1 5589 55488 55</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.335936257207!2d106.81143697454583!3d-6.219355760913347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1346d5321a7%3A0xe19b81e9e58ae407!2sOrbit%20Future%20Academy!5e0!3m2!1sen!2sid!4v1700130098361!5m2!1sen!2sid" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <h3>Teknofokus</h3>
+      <p>Solusi Cerdas untuk Hasil Panen Lebih Baik. Bergabunglah dengan Kami untuk Meningkatkan Produktivitas Pertanian Anda</p>
+      <div class="social-links">
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+      </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Teknofokus</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/green-free-one-page-bootstrap-template/ -->
+        Designed by <a href="https://bootstrapmade.com/">YADAI</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
